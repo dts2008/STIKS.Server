@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\STIKS.Common\STIKS.Common.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.DBManager\STIKS.DBManager.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.Model\STIKS.Model.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.Redis\STIKS.Redis.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Engines\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
+  </ItemGroup>
+
+
+</Project>

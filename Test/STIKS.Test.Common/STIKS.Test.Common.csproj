@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="2.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\STIKS.Common\STIKS.Common.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.Model\STIKS.Model.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.Redis\STIKS.Redis.csproj" />
+    <ProjectReference Include="..\..\Core\STIKS.Server.Protocol\STIKS.Server.Protocol.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
