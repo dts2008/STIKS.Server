@@ -135,6 +135,9 @@ namespace STIKS.Redis
         {
             T result = default(T);
 
+            if (!IsConected || Database == null)
+                return result;
+
             bool isDisconnect = false;
             bool isSentRequest = true;
 
